@@ -32,7 +32,7 @@ In this project, I observed the impact of a virtual private network (VPN) on IP 
 <h2>Synopsis</h2>
 
 <p>
-<img src="https://i.imgur.com/TzVwBK5.png" height="70%" width="70%"/>
+<img src="https://i.imgur.com/eH4xRdO.png="70%" width="70%"/>
 </p>
 <p>
 For this lab, I started out by creating a Windows 10 VM in Azure (under the “Essentials” section, notice that the location of the VM is East US). I copied and pasted the public IP address into Remote Desktop and connected to the VM.
@@ -40,7 +40,7 @@ For this lab, I started out by creating a Windows 10 VM in Azure (under the “E
 <br />
 
 <p>
-<img src="https://i.imgur.com/N08akoR.png" height="70%" width="70%"/>
+<img src="https://i.imgur.com/JkqLm3d.png" height="70%" width="70%"/>
 </p>
 <p>
 Once I was in the VM, I opened up Microsoft Edge and searched “whatismyipaddress.com.” This website shows your IP address along with the IP location. Since the website is being used inside the VM, the IP address shown is the same as the one assigned by Microsoft Azure (in the top left corner). Also, the Region for the VM was set to East US (different region from where I am located), and the website shows that the IP location is Washington, Virginia.
@@ -48,7 +48,7 @@ Once I was in the VM, I opened up Microsoft Edge and searched “whatismyipaddre
 <br />
 
 <p>
-<img src="https://i.imgur.com/933DqMe.png" height="70%" width="70%"/>
+<img src="https://i.imgur.com/mJnKiLg.png" height="70%" width="70%"/>
 </p>
 <p>
 Now that we know the IP address and location of the VM, let’s see how it changes when using a VPN! I had previously created a free ProtonVPN account in order to do this lab, so now I just logged into my account and downloaded ProtonVPN.
@@ -56,7 +56,7 @@ Now that we know the IP address and location of the VM, let’s see how it chang
 <br />
 
 <p>
-<img src="https://i.imgur.com/YcKiEZd.png" height="70%" width="70%"/>
+<img src="https://i.imgur.com/tTDHtde.png" height="70%" width="70%"/>
 </p>
 <p>
 I selected a server in Japan, then noticed the changes in ProtonVPN. One of the significant changes was that my IP address in the VPN was now different from the VM’s IP address (compare the IP address in the top left corner of my screen to the IP address in the top left corner of the VPN).
@@ -64,7 +64,7 @@ I selected a server in Japan, then noticed the changes in ProtonVPN. One of the 
 <br />
 
 <p>
-<img src="https://i.imgur.com/k0d4oAM.png" height="70%" width="70%"/>
+<img src="https://i.imgur.com/eRdbWXt.png" height="70%" width="70%"/>
 </p>
 <p>
 I still had whatismyipaddress.com open in the Edge browser, so I simply refreshed the page to view any changes. According to the website, my IP address was now the one shown in the VPN, and my location was Tokyo, Japan! This is because my physical computer was connected to the VM, which was now connected to a VPN server in Japan, making it look to the website like I was in Japan.
@@ -72,12 +72,22 @@ I still had whatismyipaddress.com open in the Edge browser, so I simply refreshe
 <br />
 
 <p>
-<img src="https://i.imgur.com/FPGISSi.png" height="70%" width="70%"/>
+<img src="https://i.imgur.com/7af61VN.png" height="70%" width="70%"/>
 </p>
 <p>
 As we can see, when I searched the term “amazon” using Google, the search results were in Japanese. This further confirmed that the VPN worked.
 </p>
 <br />
+                                                                   
+<p>
+<img src="https://i.imgur.com/q9anpdq.png" height="70%" width="70%"/>
+</p>
+<p>
+ 
+<p>
+<img src="https://i.imgur.com/OVfJ0SL.png" height="70%" width="70%"/>
+</p>
+<p>                                                                  
 
 <p>
 ✨ And that’s what happens when you use a VPN!
